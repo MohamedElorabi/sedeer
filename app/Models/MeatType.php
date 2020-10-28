@@ -58,5 +58,10 @@ class MeatType extends Model
       return $this->belongsTo('App\Models\Butchers');
     }
 
+    public function attachments()
+    {
+        return $this->morphMany('App\Models\Attachment','ref')->where('ref_type','App\Models\MeatType');
+    }
+
 
 }

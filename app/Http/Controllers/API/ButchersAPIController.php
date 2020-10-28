@@ -128,4 +128,23 @@ class ButchersAPIController extends AppBaseController
 
         return $this->sendSuccess('Butchers deleted successfully');
     }
+
+    public function favorites(Request $request)
+    {
+
+        $favorites = $request->user()->butchers()->paginate(10);
+
+        return responseJson(1, 'success', $favorites);
+    }
+
+
+    public function addFavorites(Request $request)
+    {
+        $currentUser = Auth::user();
+
+    }
+
+
+
+
 }

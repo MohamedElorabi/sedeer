@@ -69,4 +69,9 @@ class Butchers extends Model
       return $this->hasMany('App\MeatType');
     }
 
+    public function users()
+    {
+        return $this->belongsToMany('App\Users');
+    }
+
 }

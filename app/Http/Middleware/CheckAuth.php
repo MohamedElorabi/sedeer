@@ -17,8 +17,14 @@ class CheckAuth
      */
     public function handle($request, Closure $next)
     {
-
+        if (Auth::type('admin')->check()){
+             return $next($request);
+        }
         return redirect('404');
 
+
+
     }
+
+
 }

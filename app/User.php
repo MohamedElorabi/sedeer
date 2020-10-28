@@ -54,4 +54,10 @@ class User extends Authenticatable implements JWTSubject
    {
        return [];
    }
+
+    public function butchers()
+    {
+        return $this->belongsToMany('App\Models\Butchers');
+    }
+
 }

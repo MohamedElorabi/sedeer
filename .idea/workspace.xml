@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="419436c5-da33-41cd-be3a-cf696189b937" name="Default Changelist" comment="" />
+    <list default="true" id="419436c5-da33-41cd-be3a-cf696189b937" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sedeer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sedeer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DataTables/MeatTypeDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/MeatTypeDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ButchersAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ButchersAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAuth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Butchers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Butchers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Favorite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MeatType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MeatType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/ButchersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ButchersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MeatTypeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/MeatTypeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_112259_create_meat_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_112259_create_meat_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_27_125436_create_attachments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_11_125436_create_attachments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/settings/datatables_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/datatables_actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +60,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -144,9 +190,11 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jSPGSO8yxM3Nlx2JRhIVVTPFDc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -173,17 +221,41 @@
       <option name="presentableId" value="Default" />
       <updated>1603794427608</updated>
       <workItem from="1603794429765" duration="6527000" />
-      <workItem from="1603805197340" duration="8787000" />
+      <workItem from="1603805197340" duration="9603000" />
+      <workItem from="1603876788937" duration="21221000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="432" y="163" width="816" height="730" key="#Intentions" timestamp="1603811511939">
+    <state x="432" y="163" width="816" height="730" key="#Intentions" timestamp="1603891789135">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="163" width="816" height="730" key="#Intentions/0.0.1680.1010@0.0.1680.1010" timestamp="1603811511939" />
+    <state x="432" y="163" width="816" height="730" key="#Intentions/0.0.1680.1010@0.0.1680.1010" timestamp="1603891789135" />
+    <state x="570" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603881903890">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1603881903889" />
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1603889159736">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1603889159736" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1603900900326">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1603900900326" />
   </component>
 </project>

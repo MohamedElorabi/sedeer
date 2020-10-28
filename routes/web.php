@@ -43,7 +43,7 @@ Route::post(
 
 
 
-//Route::group(['middleware' => 'checkauth'], function() {
+Route::group(['middleware' => 'checkauth'], function() {
 
     Route::resource('users', 'UserController');
 
@@ -56,4 +56,4 @@ Route::post(
     Route::resource('butchers', 'ButchersController');
 
     Route::resource('meatTypes', 'MeatTypeController');
-//});
+});

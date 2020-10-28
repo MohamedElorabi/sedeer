@@ -43,11 +43,13 @@ class MeatTypeRepository extends BaseRepository
     public function create($input)
     {
         $model = $this->model->newInstance($input);
+        $model->save();
 
         if(request()->hasFile('attachments')){
             $images = request()->file('attachments');
             foreach ($images as $image) {
-                $pathAfterUpload = FileOperations::StoreFileAs($this->directory, $image, str_random(10));
+
+                $pathAfterUpload = FileOperations::StoreFileAs('public/meatTypes', $image, str_random(10));
                 $includesimage[] = $pathAfterUpload;
             }
 
@@ -61,7 +63,8 @@ class MeatTypeRepository extends BaseRepository
 
         }
 
-        $model->save();
+
+
 
         return $model;
     }

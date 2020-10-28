@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Models\Butchers;
 use App\Repositories\BaseRepository;
+use Illuminate\Http\Request;
 
 /**
  * Class ButchersRepository
@@ -60,4 +61,6 @@ class ButchersRepository extends BaseRepository
 
        return $model;
    }
+
+
 }

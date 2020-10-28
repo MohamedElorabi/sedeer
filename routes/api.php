@@ -59,4 +59,9 @@ Route::group(['middleware' => 'api', 'namespace' => 'API'], function ($router){
 
   Route::resource('meat_types', 'MeatTypeAPIController');
 
+
+
+    Route::post('favorites', 'ButchersAPIController@favorites');
+    Route::post('favorites/add', 'ButchersAPIController@addFavorites');
+
 });

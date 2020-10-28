@@ -98,7 +98,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2020 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright © 2020 <a href="#">Asol-Tech</a>.</strong> All rights reserved.
         </footer>
 
     </div>
@@ -132,7 +132,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     <li><a href="{{ url('/login') }}">Login</a></li>
-                    
+
                 </ul>
             </div>
         </div>

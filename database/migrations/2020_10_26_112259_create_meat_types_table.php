@@ -34,8 +34,4 @@ class CreateMeatTypesTable extends Migration
         Schema::drop('meat_types');
     }
 
-    public function attachments()
-    {
-        return $this->morphMany('App\Models\Attachment','ref')->where('ref_type','App\Models\MeatTaype');
-    }
 }

@@ -65,7 +65,6 @@ class MeatTypeDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'images',
             'age',
             'slaughter_date',
             'butcher_id'

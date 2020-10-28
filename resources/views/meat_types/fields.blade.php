@@ -5,7 +5,7 @@
 <!-- Images Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('images', 'Images:') !!}
-    {!! Form::file('attachments[]') !!}
+    {!! Form::file('attachments[]', ['multiple' => 'multiple']) !!}
 </div>
 <div class="clearfix"></div>
 
