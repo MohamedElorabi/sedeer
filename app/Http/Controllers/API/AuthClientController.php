@@ -17,7 +17,7 @@ class AuthClientController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login', 'register']]);
+        $this->middleware('auth:api', ['except' => ['login', 'register', 'new-password']]);
     }
 
     /**
@@ -107,5 +107,34 @@ return response()->json(compact('user', 'token'), 201);
             'token_type' => 'bearer',
             'expires_in' => auth('api')->factory()->getTTL() * 60
         ]);
+    }
+
+
+
+
+    public function newPassword(Request $request) {
+        $validator = validator()->make($request->all(), [
+            'pin_code' => 'required',
+            'phone' => 'required',
+            'password' => 'required|confirmed',
+        ]);
+        if ($validator->fails()) {
+            return responseJson(0,$validator->errors()->first(), $validator->errors());
+        }
+        $user = User::where('pin_code',$request->pin_code)->where('pin_code', '!=' , 0)
+            ->where('number_phone',$request->number_phone)->first();
+        if ($user) {
+            $user->password = bcrypt($request->password);
+            $user->pin_code = null;
+
+            if ($user->save())
+            {
+                return responseJson(1, 'Successfully');
+            } else {
+                return responseJson(0, 'error');
+            }
+        } else {
+            return responseJson(1, 'error code');
+        }
     }
 }

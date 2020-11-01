@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['namespace' => 'API'], function ($router)
+ {
 
+
+ });
 
 Route::group(['middleware' => 'api', 'prefix' => 'client', 'namespace' => 'API'], function ($router)
  {
@@ -24,7 +28,6 @@ Route::group(['middleware' => 'api', 'prefix' => 'client', 'namespace' => 'API']
     Route::post('refresh', 'AuthClientController@refresh');
     Route::post('me', 'AuthClientController@me');
 });
-
 
 
 
@@ -46,6 +49,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::group(['middleware' => 'api', 'namespace' => 'API'], function ($router){
+
+    Route::post('new-password', 'AuthClientController@newPassword');
 
   Route::resource('intros', 'IntroAPIController');
 

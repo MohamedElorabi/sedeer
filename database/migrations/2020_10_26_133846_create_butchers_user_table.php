@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFavoritesTable extends Migration
+class CreateButcherUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateFavoritesTable extends Migration
      */
     public function up()
     {
-        Schema::create('favorites', function (Blueprint $table) {
+        Schema::create('butcher_user', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id')->unsigned();
             $table->integer('butcher_id')->unsigned();

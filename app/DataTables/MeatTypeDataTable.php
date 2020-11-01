@@ -81,3 +81,5 @@ class MeatTypeDataTable extends DataTable
         return 'meat_types_datatable_' . time();
     }
 }
+
+

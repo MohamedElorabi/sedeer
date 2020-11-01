@@ -132,7 +132,7 @@ class ButchersAPIController extends AppBaseController
     public function favorites(Request $request)
     {
 
-        $favorites = $request->user()->butchers()->paginate(10);
+        $favorites = $request->user()->butcher ()->paginate(10);
 
         return responseJson(1, 'success', $favorites);
     }
@@ -142,6 +142,8 @@ class ButchersAPIController extends AppBaseController
     {
         $currentUser = Auth::user();
 
+
+        $addFavorites = $request->user()->butcher()->toggle($request->butchers);
     }
 
 

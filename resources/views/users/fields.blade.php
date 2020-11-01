@@ -1,17 +1,23 @@
-<!-- About Field -->
-<div class="form-group col-sm-12 col-lg-12">
+<!-- Name Field -->
+<div class="form-group col-sm-12 col-lg-6">
     {!! Form::label('name', 'Name:') !!}
-    {!! Form::textarea('name', null, ['class' => 'form-control']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Terms Of Use Field -->
-<div class="form-group col-sm-12 col-lg-12">
+<!-- E-mail Field -->
+<div class="form-group col-sm-12 col-lg-6">
     {!! Form::label('email', 'E-mail:') !!}
-    {!! Form::textarea('email', null, ['class' => 'form-control']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Password Field -->
+<div class="form-group col-sm-12 col-lg-6">
+    {!! Form::label('password', 'Password:') !!}
+    {!! Form::password('password', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('settings.index') }}" class="btn btn-default">Cancel</a>
+    <a href="{{ route('users.index') }}" class="btn btn-default">Cancel</a>
 </div>
