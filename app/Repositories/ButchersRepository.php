@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Butchers;
+use App\Models\ButcherView;
 use App\Repositories\BaseRepository;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,6 @@ class ButchersRepository extends BaseRepository
         'address',
         'longitude',
         'latituede',
-        'views'
     ];
 
     /**
@@ -61,6 +61,22 @@ class ButchersRepository extends BaseRepository
 
        return $model;
    }
+
+
+    public function update($input, $id)
+    {
+        $query = $this->model->newQuery();
+
+        $model = $query->findOrFail($id);
+
+        $model->fill($input);
+
+        $model->save();
+
+        return $model;
+    }
+
+
 
 
 }

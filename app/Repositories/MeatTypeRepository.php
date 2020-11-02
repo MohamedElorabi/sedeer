@@ -47,9 +47,12 @@ class MeatTypeRepository extends BaseRepository
 
         if(request()->hasFile('attachments')){
             $images = request()->file('attachments');
-            foreach ($images as $image) {
+            $includesimage = [];
 
-                $pathAfterUpload = FileOperations::StoreFileAs('public/meatTypes', $image, str_random(10));
+            $Attach_data = [];
+            foreach ($images as $image) {
+                $pathAfterUpload = FileOperations::StoreFile('meatTypes', $image);
+
                 $includesimage[] = $pathAfterUpload;
             }
 
@@ -63,9 +66,43 @@ class MeatTypeRepository extends BaseRepository
 
         }
 
+        return $model;
+    }
 
+
+
+
+    public function update($input, $id)
+    {
+        $query = $this->model->newQuery();
+
+        $model = $query->findOrFail($id);
+
+        $model->fill($input);
+
+        if(request()->hasFile('attachments')){
+            $images = request()->file('attachments');
+            foreach ($images as $image) {
+                $pathAfterUpload = FileOperations::StoreFileAs('public/meatTypes', $image, str_random(10));
+
+                $includesimage[] = $pathAfterUpload;
+            }
+
+            foreach ($includesimage as $key => $value) {
+                $data[] = [
+                    'value'=>$value
+                ];
+                $model->attachments()->delete();
+            }
+
+            $model->attachments()->createMany($data);
+        }
+
+        $model->save();
 
 
         return $model;
     }
+
+
 }

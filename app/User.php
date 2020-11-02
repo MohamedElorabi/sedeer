@@ -55,9 +55,14 @@ class User extends Authenticatable implements JWTSubject
        return [];
    }
 
-    public function butchers()
+    public function favorite_butchers()
     {
         return $this->belongsToMany('App\Models\Butchers');
+    }
+
+    public function view_butchers()
+    {
+        return $this->hasOne('App\Models\ButcherView');
     }
 
 }

@@ -52,8 +52,8 @@ class Butchers extends Model
         'address' => 'string',
         'longitude' => 'decimal:2',
         'latituede' => 'decimal:2',
-        'views' => 'integer'
     ];
+
 
     /**
      * Validation rules
@@ -61,17 +61,25 @@ class Butchers extends Model
      * @var array
      */
     public static $rules = [
-
+        'name' => 'required',
+        'phone' => 'required',
+        'image' => 'required',
+        'address' => 'required',
     ];
 
     public function meat_types()
     {
-      return $this->hasMany('App\MeatType');
+      return $this->hasMany(MeatType::class,'butcher_id','id');
     }
 
     public function users()
     {
-        return $this->belongsToMany('App\Users');
+        return $this->belongsToMany('App\User');
+    }
+
+    public function view_butchers()
+    {
+        return $this-> hasMany('App\Models\ButcherView');
     }
 
 }

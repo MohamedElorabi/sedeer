@@ -29,7 +29,7 @@ class ButchersController extends AppBaseController
      */
     public function index(ButchersDataTable $butchersDataTable)
     {
-        return $butchersDataTable->render('butchers.index');
+        return $butchersDataTable->render('butchers.index', ['title' => 'ملاحم']);
     }
 
     /**

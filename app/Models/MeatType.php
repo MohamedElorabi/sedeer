@@ -50,7 +50,10 @@ class MeatType extends Model
      * @var array
      */
     public static $rules = [
-        'age' => 'required'
+        'age' => 'required',
+        'slaughter_date' => 'required|date',
+        'butcher_id' => 'required',
+
     ];
 
     public function butcher()

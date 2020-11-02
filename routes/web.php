@@ -18,14 +18,10 @@ Route::get('/', function () {
 });
 
 
-Auth::routes();
 
-Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true, 'register' => false]);
 
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/home', 'HomeController@index')->middleware('verified');
+//Route::get('/home', 'HomeController@index')->middleware('verified');
 
 //
 //Route::get('generator_builder', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@builder')->name('io_generator_builder');
@@ -47,8 +43,9 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 
 
 
-Route::group(['middleware' => 'checkauth'], function() {
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => 'checkauth','localeSessionRedirect', 'localizationRedirect', 'localeViewPath'], function() {
 
+    Route::get('/home', 'HomeController@index');
 
     Route::resource('users', 'UserController');
 

@@ -18,11 +18,15 @@ class CheckAuth
     public function handle($request, Closure $next)
     {
 
-        if (Auth::check() && Auth::user()->type == 'admin'){
+        if (Auth::check()){
 
-             return $next($request);
-
+            if( Auth::user()->type == 'admin'){
+                return $next($request);
+            }else{
+                return redirect('404');
+            }
         }
+
         return redirect('404');
 
     }

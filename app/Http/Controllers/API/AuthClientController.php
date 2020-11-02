@@ -113,28 +113,37 @@ return response()->json(compact('user', 'token'), 201);
 
 
     public function newPassword(Request $request) {
+
         $validator = validator()->make($request->all(), [
             'pin_code' => 'required',
             'phone' => 'required',
             'password' => 'required|confirmed',
         ]);
+
         if ($validator->fails()) {
+
             return responseJson(0,$validator->errors()->first(), $validator->errors());
+
         }
+
         $user = User::where('pin_code',$request->pin_code)->where('pin_code', '!=' , 0)
-            ->where('number_phone',$request->number_phone)->first();
+
+            ->where('phone',$request->phone)->first();
+
         if ($user) {
+
             $user->password = bcrypt($request->password);
+
             $user->pin_code = null;
 
             if ($user->save())
             {
-                return responseJson(1, 'Successfully');
+                return response()->json(['status' =>1, 'message'=>'success new password']);
             } else {
-                return responseJson(0, 'error');
+                return response()->json(['status' =>0, 'message'=>'error password']);
             }
         } else {
-            return responseJson(1, 'error code');
+            return response()->json(['status' =>0, 'message'=>'error code']);
         }
     }
 }

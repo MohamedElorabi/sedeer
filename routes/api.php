@@ -14,11 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'API'], function ($router)
- {
 
 
- });
+     Route::post('new-password', 'AuthController@newPassword');
+
 
 Route::group(['middleware' => 'api', 'prefix' => 'client', 'namespace' => 'API'], function ($router)
  {

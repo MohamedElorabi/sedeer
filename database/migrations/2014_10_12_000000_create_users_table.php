@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
            $table->string('password');
            $table->enum('type', array('admin', 'super_visor', 'client'));
            $table->enum('lang', array('ar', 'en'))->default('ar');
+           $table->integer('pin_code')->nullable();
            $table->rememberToken();
            $table->timestamps();
         });

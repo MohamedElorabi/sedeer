@@ -19,10 +19,13 @@ class ButchersDataTable extends DataTable
         $dataTable = new EloquentDataTable($query);
         return $dataTable->addColumn('action', 'intros.datatables_actions')->editColumn('image', function ($q) {
             return ($q->image)  ? '<img src="'. asset('/'.$q->image).'" width="150px" hieght="150px" />' : ' no image';
+        })->addColumn('views', function ($q) {
+            return $q->view_butchers->count();
         })
             ->rawColumns([
                 'image',
-                'action'
+                'action' ,
+                'views'
             ]);
     }
 
@@ -70,6 +73,7 @@ class ButchersDataTable extends DataTable
     protected function getColumns()
     {
         return [
+
             'name',
             'phone',
             'image',
@@ -77,7 +81,9 @@ class ButchersDataTable extends DataTable
             'longitude',
             'latituede',
             'views'
+
         ];
+
     }
 
     /**
