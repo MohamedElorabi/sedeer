@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\MeatType;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -65,9 +66,9 @@ class MeatTypeDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'age',
-            'slaughter_date',
-            'butcher_id'
+            'age' => new Column(['title' => __('lang.Age'), 'data' => 'age']),
+            'slaughter_date'=> new Column(['title' => __('lang.Slaughter Date'), 'data' => 'slaughter_date']),
+            'butcher_id'=> new Column(['title' => __('lang.Butcher'), 'data' => 'butcher_id'])
         ];
     }
 

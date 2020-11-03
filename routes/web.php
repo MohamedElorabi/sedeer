@@ -59,3 +59,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => 'che
 
     Route::resource('meatTypes', 'MeatTypeController');
 });
+
+

@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\Intro;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -71,9 +72,9 @@ class IntroDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'title',
-            'description',
-            'image'
+            'title' => new Column(['title' => __('lang.Title'), 'data' => 'title']),
+            'description' => new Column(['title' => __('lang.Description'), 'data' => 'description']),
+            'image' => new Column(['title' => __('lang.Image'), 'data' => 'image'])
         ];
     }
 

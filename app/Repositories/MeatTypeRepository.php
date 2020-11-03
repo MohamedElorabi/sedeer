@@ -83,7 +83,7 @@ class MeatTypeRepository extends BaseRepository
         if(request()->hasFile('attachments')){
             $images = request()->file('attachments');
             foreach ($images as $image) {
-                $pathAfterUpload = FileOperations::StoreFileAs('public/meatTypes', $image, str_random(10));
+                $pathAfterUpload = FileOperations::StoreFileAs('meatTypes', $image, str_random(10));
 
                 $includesimage[] = $pathAfterUpload;
             }

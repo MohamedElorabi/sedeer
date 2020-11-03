@@ -12,6 +12,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <button class="btn btn-primary" type="submit">@lang('lang.Save')</button>
     <a href="{{ route('settings.index') }}" class="btn btn-default">Cancel</a>
 </div>

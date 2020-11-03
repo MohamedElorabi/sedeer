@@ -20,12 +20,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Butchers extends Model
 {
-    use SoftDeletes;
 
     public $table = 'butchers';
 
 
-    protected $dates = ['deleted_at'];
 
 
 

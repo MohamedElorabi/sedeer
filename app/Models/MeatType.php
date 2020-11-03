@@ -17,15 +17,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class MeatType extends Model
 {
-    use SoftDeletes;
-
-    public $table = 'meat_types';
-
-
-    protected $dates = ['deleted_at'];
-
-
-
     public $fillable = [
         'age',
         'slaughter_date',

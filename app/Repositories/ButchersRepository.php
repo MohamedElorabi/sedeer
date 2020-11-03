@@ -70,7 +70,15 @@ class ButchersRepository extends BaseRepository
         $model = $query->findOrFail($id);
 
         $model->fill($input);
+        if (request()->hasFile('image')  ) {
 
+            $logo = request()->image;
+            $logo_new_name = time() . $logo->getClientOriginalName();
+            $logo->move('uploads/butchers/', $logo_new_name);
+
+            $model->image = 'uploads/butchers/'.$logo_new_name;
+            $model->save();
+        }
         $model->save();
 
         return $model;

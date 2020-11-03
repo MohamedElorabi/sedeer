@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Meat Type
+            Meat Types
         </h1>
     </section>
     <div class="content">

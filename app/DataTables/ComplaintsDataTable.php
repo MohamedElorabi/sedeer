@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\Complaints;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -65,9 +66,9 @@ class ComplaintsDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'name',
-            'phone',
-            'complaints'
+            'name' => new Column(['title' => __('lang.Name'), 'data' => 'name']),
+            'phone' => new Column(['title' => __('lang.Phone'), 'data' => 'phone']),
+            'complaints' => new Column(['title' => __('lang.Complaints'), 'data' => 'complaints']),
         ];
     }
 

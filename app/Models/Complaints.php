@@ -16,12 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Complaints extends Model
 {
-    use SoftDeletes;
 
     public $table = 'complaints';
-    
 
-    protected $dates = ['deleted_at'];
+
 
 
 
@@ -54,5 +52,5 @@ class Complaints extends Model
         'complaints' => 'required'
     ];
 
-    
+
 }

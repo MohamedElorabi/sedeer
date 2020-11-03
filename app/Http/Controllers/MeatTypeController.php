@@ -30,7 +30,7 @@ class MeatTypeController extends AppBaseController
      */
     public function index(MeatTypeDataTable $meatTypeDataTable)
     {
-        return $meatTypeDataTable->render('meat_types.index');
+        return $meatTypeDataTable->render('meat_types.index', ['title' => 'Meat Types']);
     }
 
     /**
@@ -40,7 +40,7 @@ class MeatTypeController extends AppBaseController
      */
     public function create()
     {
-        return view('meat_types.create');
+        return view('meat_types.create', ['title' => 'Create Meat Types']);
     }
 
     /**
@@ -98,7 +98,7 @@ class MeatTypeController extends AppBaseController
             return redirect(route('meatTypes.index'));
         }
 
-        return view('meat_types.edit')->with('meatType', $meatType);
+        return view('meat_types.edit', ['title' => 'Edit Meat Type'])->with('meatType', $meatType);
     }
 
     /**

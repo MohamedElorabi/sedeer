@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Meat Type
+            @lang('lang.Meat Types')
         </h1>
    </section>
    <div class="content">

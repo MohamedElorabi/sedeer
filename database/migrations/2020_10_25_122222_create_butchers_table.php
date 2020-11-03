@@ -23,7 +23,6 @@ class CreateButchersTable extends Migration
             $table->decimal('longitude');
             $table->decimal('latituede');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

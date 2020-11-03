@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\User;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -48,7 +49,7 @@ class UserDataTable extends DataTable
                 'stateSave' => true,
                 'order'     => [[0, 'desc']],
                 'buttons'   => [
-                    ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner',],
+
                     ['extend' => 'export', 'className' => 'btn btn-default btn-sm no-corner',],
                     ['extend' => 'print', 'className' => 'btn btn-default btn-sm no-corner',],
                     ['extend' => 'reset', 'className' => 'btn btn-default btn-sm no-corner',],
@@ -65,10 +66,10 @@ class UserDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'name',
-            'email',
-            'phone',
-            'type'
+            'name'=> new Column(['title' => __('lang.Name'), 'data' => 'name']),
+            'email'=> new Column(['title' => __('lang.E-mail'), 'data' => 'email']),
+            'phone'=> new Column(['title' => __('lang.Phone'), 'data' => 'phone']),
+            'type'=> new Column(['title' => __('lang.Type'), 'data' => 'type'])
         ];
     }
 

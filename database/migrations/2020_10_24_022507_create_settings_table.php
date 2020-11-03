@@ -19,7 +19,6 @@ class CreateSettingsTable extends Migration
             $table->text('about');
             $table->text('terms_of_use');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

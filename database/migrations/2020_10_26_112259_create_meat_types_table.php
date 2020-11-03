@@ -20,7 +20,6 @@ class CreateMeatTypesTable extends Migration
             $table->string('slaughter_date');
             $table->integer('butcher_id');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

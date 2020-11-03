@@ -29,7 +29,7 @@ class ButchersController extends AppBaseController
      */
     public function index(ButchersDataTable $butchersDataTable)
     {
-        return $butchersDataTable->render('butchers.index', ['title' => 'ملاحم']);
+        return $butchersDataTable->render('butchers.index', ['title' => 'Butchers']);
     }
 
     /**
@@ -39,7 +39,7 @@ class ButchersController extends AppBaseController
      */
     public function create()
     {
-        return view('butchers.create');
+        return view('butchers.create', ['title' => 'Create Butchers']);
     }
 
     /**
@@ -97,7 +97,7 @@ class ButchersController extends AppBaseController
             return redirect(route('butchers.index'));
         }
 
-        return view('butchers.edit')->with('butchers', $butchers);
+        return view('butchers.edit', ['title' => 'Edit Butchers'])->with('butchers', $butchers);
     }
 
     /**

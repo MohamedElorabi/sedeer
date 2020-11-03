@@ -20,7 +20,6 @@ class CreateComplaintsTable extends Migration
             $table->string('phone');
             $table->text('complaints');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

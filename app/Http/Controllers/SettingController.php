@@ -29,7 +29,7 @@ class SettingController extends AppBaseController
      */
     public function index(SettingDataTable $settingDataTable)
     {
-        return $settingDataTable->render('settings.index');
+        return $settingDataTable->render('settings.index', ['title' => 'Settings']);
     }
 
     /**
@@ -46,7 +46,7 @@ class SettingController extends AppBaseController
      *
      * @return Response
      */
-    
+
 
     /**
      * Display the specified Setting.
@@ -85,7 +85,7 @@ class SettingController extends AppBaseController
             return redirect(route('settings.index'));
         }
 
-        return view('settings.edit')->with('setting', $setting);
+        return view('settings.edit', ['title' => 'Edit Settings'])->with('setting', $setting);
     }
 
     /**

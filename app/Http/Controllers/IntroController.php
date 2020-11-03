@@ -29,7 +29,7 @@ class IntroController extends AppBaseController
      */
     public function index(IntroDataTable $introDataTable)
     {
-        return $introDataTable->render('intros.index');
+        return $introDataTable->render('intros.index', ['title' => 'Intro']);
     }
 
     /**
@@ -39,7 +39,7 @@ class IntroController extends AppBaseController
      */
     public function create()
     {
-        return view('intros.create');
+        return view('intros.create', ['title' => 'Create Intro']);
     }
 
     /**
@@ -97,7 +97,7 @@ class IntroController extends AppBaseController
             return redirect(route('intros.index'));
         }
 
-        return view('intros.edit')->with('intro', $intro);
+        return view('intros.edit', ['title' => 'Edit Intro'])->with('intro', $intro);
     }
 
     /**

@@ -29,7 +29,7 @@ class ComplaintsController extends AppBaseController
      */
     public function index(ComplaintsDataTable $complaintsDataTable)
     {
-        return $complaintsDataTable->render('complaints.index');
+            return $complaintsDataTable->render('complaints.index', ['title' => 'Complaints']);
     }
 
     /**
@@ -39,7 +39,7 @@ class ComplaintsController extends AppBaseController
      */
     public function create()
     {
-        return view('complaints.create');
+        return view('complaints.create', ['title' => 'Create Complaints']);
     }
 
     /**
@@ -97,7 +97,7 @@ class ComplaintsController extends AppBaseController
             return redirect(route('complaints.index'));
         }
 
-        return view('complaints.edit')->with('complaints', $complaints);
+        return view('complaints.edit', ['title' => 'Edit Complaints'])->with('complaints', $complaints);
     }
 
     /**

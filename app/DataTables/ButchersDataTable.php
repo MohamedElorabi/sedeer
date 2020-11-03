@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\Butchers;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -74,14 +75,13 @@ class ButchersDataTable extends DataTable
     {
         return [
 
-            'name',
-            'phone',
-            'image',
-            'address',
-            'longitude',
-            'latituede',
-            'views'
-
+            'name' => new Column(['title' => __('lang.Name'), 'data' => 'name']),
+            'phone' => new Column(['title' => __('lang.Phone'), 'data' => 'phone']),
+            'image' => new Column(['title' => __('lang.Image'), 'data' => 'image']),
+            'address' => new Column(['title' => __('lang.Address'), 'data' => 'address']),
+            'longitude' => new Column(['title' => __('lang.Longitude'), 'data' => 'longitude']),
+            'latituede' => new Column(['title' => __('lang.Latituede'), 'data' => 'latituede']),
+            'views' => new Column(['title' => __('lang.Views'), 'data' => 'views']),
         ];
 
     }

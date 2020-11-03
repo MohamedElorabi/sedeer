@@ -100,6 +100,7 @@ class MeatTypeAPIController extends AppBaseController
             return $this->sendError('Meat Type not found');
         }
 
+
         $meatType = $this->meatTypeRepository->update($input, $id);
 
         return $this->sendResponse($meatType->toArray(), 'MeatType updated successfully');

@@ -16,12 +16,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Intro extends Model
 {
-    use SoftDeletes;
 
     public $table = 'intros';
-    
 
-    protected $dates = ['deleted_at'];
+
 
 
 
@@ -49,8 +47,8 @@ class Intro extends Model
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
-    
+
 }

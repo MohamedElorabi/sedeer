@@ -29,7 +29,7 @@ class UserController extends AppBaseController
      */
     public function index(UserDataTable $userDataTable)
     {
-        return $userDataTable->render('users.index');
+        return $userDataTable->render('users.index', ['title' => 'Users']);
     }
 
     /**

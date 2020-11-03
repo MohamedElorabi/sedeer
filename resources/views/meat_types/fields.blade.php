@@ -4,20 +4,20 @@
 
 <!-- Images Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('images', 'Images:') !!}
+    <label for="name">@lang('lang.Images') :</label>
     {!! Form::file('attachments[]', ['multiple' => 'multiple']) !!}
 </div>
 <div class="clearfix"></div>
 
 <!-- Age Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('age', 'Age:') !!}
+    <label for="name">@lang('lang.Age') :</label>
     {!! Form::text('age', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Slaughter Date Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('slaughter_date', 'Slaughter Date:') !!}
+    <label for="name">@lang('lang.Slaughter Date') :</label>
     {!! Form::text('slaughter_date', null, ['class' => 'form-control','id'=>'slaughter_date']) !!}
 </div>
 
@@ -33,12 +33,12 @@
 
 <!-- Butcher Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('butcher_id', 'Butcher Id:') !!}
+    <label for="name">@lang('lang.Butcher') :</label>
     {!! Form::select('butcher_id', App\Models\Butchers::pluck('name', 'id'), old('butcher_id'), ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('meatTypes.index') }}" class="btn btn-default">Cancel</a>
+    <button class="btn btn-primary" type="submit">@lang('lang.Save')</button>
+    <a href="{{ route('meatTypes.index') }}" class="btn btn-default">@lang('lang.Cancel')</a>
 </div>

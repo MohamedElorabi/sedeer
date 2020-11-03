@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\Setting;
+use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
@@ -64,8 +65,8 @@ class SettingDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'about',
-            'terms_of_use'
+            'about' => new Column(['title' => __('lang.About'), 'data' => 'about']),
+            'terms_of_use' => new Column(['title' => __('lang.Terms_Of_Use'), 'data' => 'terms_of_use'])
         ];
     }
 

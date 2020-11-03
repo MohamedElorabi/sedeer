@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="content-header">
-        <h1 class="pull-left">Settings</h1>
+        <h1 class="pull-left">@lang('lang.Settings')</h1>
     </section>
     <div class="content">
         <div class="clearfix"></div>

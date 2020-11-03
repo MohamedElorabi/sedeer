@@ -49,7 +49,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['middleware' => 'api', 'namespace' => 'API'], function ($router){
 
-    Route::post('new-password', 'AuthClientController@newPassword');
+
 
   Route::resource('intros', 'IntroAPIController');
 
@@ -59,13 +59,13 @@ Route::group(['middleware' => 'api', 'namespace' => 'API'], function ($router){
 
 
   Route::resource('butchers', 'ButchersAPIController');
-
+    Route::post('butchers/update/{id}', 'ButchersAPIController@update');
 
   Route::resource('meat_types', 'MeatTypeAPIController');
+  Route::post('meat_types/update/{id}', 'MeatTypeAPIController@update');
 
+    Route::post('new-password', 'AuthClientController@newPassword');
 
-
-    Route::post('favorites', 'ButchersAPIController@favorites');
     Route::post('favorites/add', 'ButchersAPIController@addFavorites');
 
 });
