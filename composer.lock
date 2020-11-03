@@ -867,7 +867,6 @@
                 "illuminate/support": ">=5.0",
                 "php": ">=5.5.9"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -8380,5 +8379,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

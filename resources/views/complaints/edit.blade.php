@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Complaints
+            @lang('lang.Complaints')
         </h1>
    </section>
    <div class="content">

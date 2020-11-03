@@ -13,9 +13,11 @@
 
     <!-- Theme style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
-    {{--    ar    --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/adminlte-rtl@2.4.2/dist/css/AdminLTE.min.css">
+        <!-- ar     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.1.0-alpha-1/css/AdminLTE-rtl.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/adminlte-rtl@2.4.2/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/adminlte-rtl@2.4.2/dist/css/skins/_all-skins.min.css">
 
 
 
@@ -53,8 +55,7 @@
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-
-                        <li class="dropdown tasks-menu">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-flag-o"></i>
                             </a>
