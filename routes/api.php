@@ -54,24 +54,19 @@ Route::group(['middleware' => ['jwt.auth', 'check.api.auth']], function () {
 });
 
 
+Route::group(['middleware' => ['jwt.auth', 'check.api.client']], function () {
+    Route::group(['namespace' => 'API'], function () {
 
-Route::group(['middleware' => 'api', 'namespace' => 'API'], function ($router){
+        Route::get('intros', 'IntroAPIController@index');
+        Route::get('complaints', 'IntroAPIController@index');
+        Route::post('complaints', 'IntroAPIController@store');
+        Route::get('butchers', 'ButchersAPIController@index');
+        Route::get('butchers/{id}', 'ButchersAPIController@show');
+        Route::get('meat_types', 'MeatTypeAPIController@index');
+        Route::get('meat_types/{id}', 'MeatTypeAPIController@show');
+        Route::post('favorites/add', 'ButchersAPIController@addFavorites');
+        Route::get('settings', 'SettingAPIController@index');
+        Route::post('new-password', 'AuthClientController@newPassword');
 
-  Route::resource('intros', 'IntroAPIController');
-
-  Route::resource('complaints', 'ComplaintsAPIController');
-
-  Route::resource('settings', 'SettingAPIController');
-
-
-  Route::resource('butchers', 'ButchersAPIController');
-
-
-  Route::resource('meat_types', 'MeatTypeAPIController');
-
-
-    Route::post('new-password', 'AuthClientController@newPassword');
-
-    Route::post('favorites/add', 'ButchersAPIController@addFavorites');
-
+    });
 });

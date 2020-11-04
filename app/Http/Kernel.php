@@ -65,6 +65,7 @@ class Kernel extends HttpKernel
         'jwt.auth' => \App\Http\Middleware\JwtMiddleware::class,
         'checkauth' => \App\Http\Middleware\CheckAuth::class,
         'check.api.auth' => \App\Http\Middleware\CheckApiAuth::class,
+        'check.api.client' => \App\Http\Middleware\ClientCheck::class,
         'localize'                => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect'    => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
         'localeSessionRedirect'   => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
