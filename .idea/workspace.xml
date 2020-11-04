@@ -21,59 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="419436c5-da33-41cd-be3a-cf696189b937" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/ButchersDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/ButchersDataTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DataTables/ComplaintsDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/ComplaintsDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/IntroDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/IntroDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/MeatTypeDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/MeatTypeDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/SettingDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/SettingDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DataTables/UserDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DataTables/UserDataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/MeatTypeAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MeatTypeAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ButchersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ButchersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComplaintsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComplaintsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IntroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IntroController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MeatTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MeatTypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SettingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Butchers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Butchers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Complaints.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Complaints.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Intro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Intro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MeatType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MeatType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/ButchersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/ButchersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/MeatTypeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/MeatTypeRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckApiAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckApiAuth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_24_020807_create_intros_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_24_020807_create_intros_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_24_021558_create_complaints_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_24_021558_create_complaints_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_24_022507_create_settings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_24_022507_create_settings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_25_122222_create_butchers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_25_122222_create_butchers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_112259_create_meat_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_112259_create_meat_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/butchers/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/butchers/fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/complaints/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/complaints/fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/butchers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/butchers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/butchers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/butchers/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/butchers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/butchers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/butchers/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/butchers/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/complaints/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/complaints/datatables_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/complaints/datatables_actions.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/complaints/edit.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/complaints/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/complaints/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/intros/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/intros/fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/intros/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/intros/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/meat_types/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/meat_types/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/datatables_actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +223,8 @@
       <workItem from="1604222881431" duration="21574000" />
       <workItem from="1604308681159" duration="24073000" />
       <workItem from="1604396989878" duration="99000" />
-      <workItem from="1604397091655" duration="21741000" />
+      <workItem from="1604397091655" duration="22154000" />
+      <workItem from="1604482273837" duration="21325000" />
     </task>
     <servers />
   </component>
@@ -297,9 +260,13 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1603889159736" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1603900900326">
+    <state x="496" y="233" key="run.anything.popup" timestamp="1604485049129">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1603900900326" />
+    <state x="496" y="233" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1604485049129" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1604505663682">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1604505663682" />
   </component>
 </project>

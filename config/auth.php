@@ -44,9 +44,17 @@ return [
         'api' => [
             'driver' => 'jwt',
             'provider' => 'users',
-            'hash' => false,
         ],
 
+        'super_visor' => [
+            'driver' => 'jwt',
+            'provider' => 'users',
+        ],
+
+        'client' => [
+            'driver' => 'jwt',
+            'provider' => 'users',
+        ],
 
     ],
 
@@ -72,6 +80,17 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+
+        'super_visor' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+
+        'client' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+
 
 
 
