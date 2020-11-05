@@ -45,10 +45,20 @@ Route::group(['middleware' => ['jwt.auth', 'check.api.auth']], function () {
         Route::post('butchers/create', 'ButchersAPIController@store');
         Route::post('butchers/update/{id}', 'ButchersAPIController@update');
         Route::post('butchers/delete/{id}', 'ButchersAPIController@destroy');
-
         Route::post('meat_types/create', 'MeatTypeAPIController@store');
         Route::post('meat_types/update/{id}', 'MeatTypeAPIController@update');
         Route::post('meat_types/delete/{id}', 'MeatTypeAPIController@destroy');
+
+        Route::get('intros', 'IntroAPIController@index');
+        Route::get('complaints', 'IntroAPIController@index');
+        Route::post('complaints', 'IntroAPIController@store');
+        Route::get('butchers', 'ButchersAPIController@index');
+        Route::get('butchers/{id}', 'ButchersAPIController@show');
+        Route::get('meat_types', 'MeatTypeAPIController@index');
+        Route::get('meat_types/{id}', 'MeatTypeAPIController@show');
+        Route::post('favorites/add', 'ButchersAPIController@addFavorites');
+        Route::get('settings', 'SettingAPIController@index');
+        Route::post('new-password', 'AuthClientController@newPassword');
 
     });
 });
@@ -56,7 +66,6 @@ Route::group(['middleware' => ['jwt.auth', 'check.api.auth']], function () {
 
 Route::group(['middleware' => ['jwt.auth', 'check.api.client']], function () {
     Route::group(['namespace' => 'API'], function () {
-
         Route::get('intros', 'IntroAPIController@index');
         Route::get('complaints', 'IntroAPIController@index');
         Route::post('complaints', 'IntroAPIController@store');
