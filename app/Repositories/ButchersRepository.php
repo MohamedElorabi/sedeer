@@ -74,9 +74,9 @@ class ButchersRepository extends BaseRepository
 
             $logo = request()->image;
             $logo_new_name = time() . $logo->getClientOriginalName();
-            $logo->move('uploads/butchers/', $logo_new_name);
+            $logo->move('/public/uploads/butchers/', $logo_new_name);
 
-            $model->image = 'uploads/butchers/'.$logo_new_name;
+            $model->image = '/public/uploads/butchers/'.$logo_new_name;
             $model->save();
         }
         $model->save();

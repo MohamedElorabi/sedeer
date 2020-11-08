@@ -47,9 +47,9 @@ class Complaints extends Model
      * @var array
      */
     public static $rules = [
-        'name' => 'required',
+        'name' => 'required|max:255',
         'phone' => 'required',
-        'complaints' => 'required'
+        'complaints' => 'required|max:255'
     ];
 
 

@@ -59,10 +59,12 @@ class Butchers extends Model
      * @var array
      */
     public static $rules = [
-        'name' => 'required',
-        'phone' => 'required',
-        'image' => 'required',
-        'address' => 'required',
+        'name' => 'required|max:255',
+        'phone' => 'required|min:11|numeric|unique:butchers',
+        'image' => 'required|mimes:jpeg,bmp,png,jpg',
+        'address' => 'required|max:255',
+        'longitude' => 'required|numeric|between:0.001,99.99',
+        'latituede' => 'required|numeric|between:0.001,99.99',
     ];
 
     public function meat_types()
