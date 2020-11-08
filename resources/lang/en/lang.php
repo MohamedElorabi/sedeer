@@ -28,6 +28,6 @@
         'E-mail'  => 'E-mail',
         'Type'  => 'Type',
         'Images'  => 'Images',
-
+        'Save'  => 'Save',
     );
 ?>
